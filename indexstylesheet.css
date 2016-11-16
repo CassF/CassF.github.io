@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Pathway+Gothic+One|Rambla');
 title {
 	color:;
 
@@ -10,7 +11,9 @@ title {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #E7DDE5;
+    background-color: #F7DCF3;
+    font-family: 'Rambla', sans-serif;
+
 }
 
 #navbar li {
@@ -23,18 +26,19 @@ title {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
 }
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #999398;
+    background-color: #BE91B8;
 }
 /* End of navigation bar*/
 h1 {
 	border-bottom: 2px solid #E7DDE5;
 	color: #6C636A;
-	font-size: 40px;
-	font-family: Times New Roman;
+	font-size: 60px;
+	font-family: 'Pathway Gothic One', sans-serif;
 	margin-bottom: 0;
 }
 
@@ -55,15 +59,12 @@ h1 {
 }
 
 h2 {
-	font-family: Lucida Console;
+	font-family: 'Pathway Gothic One', sans-serif;
 	color: #999398;
-	font-size: 30px;
+	font-size: 44px;
 	border-bottom: 2px solid #E7DDE5;
 
 	
-}
-h2 {
-	font-size:28px;
 }
 h3 {
 	color: #6C636A;
