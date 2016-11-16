@@ -65,11 +65,18 @@ h2 {
 }
 h3 {
 	color: #6C636A;
-	font-size: 
+	font-size: 24px;
 	font-family: Lucida Console;
 }
 /* Styling for all lists */
 .lists {
 	font-family: 'Rambla', sans-serif;
-
+	font-size:20px;
+}
+.nolists {
+	font-family: 'Rambla', sans-serif;
+	font-size:20px;
+	list-style-type: none;
+	margin: 0;
+	text-align: left;
 }
