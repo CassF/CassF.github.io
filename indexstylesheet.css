@@ -1,3 +1,10 @@
 p {
 	color: red;
 }
+section {
+	font-style: Verdana;
+
+}
+#header {
+	background-color: #BCD2EE;
+}
