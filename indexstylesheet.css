@@ -6,24 +6,25 @@ title {
 }
 h1 {
 	color: #500446;
-	background-color: #BCD2EE;
+	background-color: #474247;
 	font-size: 40px;
 	font-family: Lucida Console;
 }
 h2 {
-	font-family: Verdana;
+	font-family: Lucida Console;
 	color: #6495ED;
 	font-size: 30px;
+	background-color:#474247;
 }
 h3 {
 	color: blue;
-	background-color: ;
+	background-color:#474247;
 	font-size: 
-	font-family: Arial;
+	font-family: Lucida Console;
 }
 p {
 	color: blue;
-	background-color: ;
+	background-color:#474247;
 	font-size: 
 	font-family: Lucida Console;
 }
