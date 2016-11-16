@@ -2,32 +2,37 @@ title {
 	color:;
 	background-color: ;
 	font-size: ;
-	font-family: ;
+	font-family:Lucida Console;
 }
-
+h1 {
+	color: #500446;
+	background-color: #BCD2EE;
+	font-size: 40px;
+	font-family: Lucida Console;
+}
+h2 {
+	font-family: Verdana;
+	color: #6495ED;
+	font-size: 30px;
+}
+h3 {
+	color: blue;
+	background-color: ;
+	font-size: 
+	font-family: Arial;
+}
 p {
 	color: blue;
 	background-color: ;
 	font-size: 
-	font-family: Arial ;
+	font-family: Lucida Console;
 }
 section {
 	color: blue;
 	background-color: ;
 	font-size: 
-	font-family: Arial ;
+	font-family: Arial;
 
-}
-#header {
-	color: #500446;
-	background-color: #BCD2EE;
-	font-size: 40px;
-	font-family: ;
-}
-h2 {
-	font-style: Verdana;
-	color: #6495ED;
-	font-size: 30px;
 }
 li {
 	color: violet;
