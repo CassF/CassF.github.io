@@ -33,11 +33,12 @@ title {
 /* Change the link color on hover */
 li a:hover {
     background-color: #BE91B8;
+    border-bottom: 4px solid #66105A;
 }
 /* End of navigation bar*/
 h1 {
 	border-bottom: 2px solid #E7DDE5;
-	color: #6C636A;
+	color: #66105A;
 	font-size: 60px;
 	font-family: 'Pathway Gothic One', sans-serif;
 	margin-bottom: 0;
@@ -57,19 +58,20 @@ p {
 
 h2 {
 	font-family: 'Pathway Gothic One', sans-serif;
-	color: #999398;
+	color: #6C636A;
 	font-size: 44px;
 	border-bottom: 2px solid #E7DDE5;
 
 	
 }
 h3 {
-	color: #6C636A;
+	color: #999398;
 	font-size: 24px;
 	font-family: Lucida Console;
 }
 /* Styling for all lists */
 .lists {
+	color: #6C636A
 	font-family: 'Rambla', sans-serif;
 	font-size:20px;
 }
@@ -77,6 +79,4 @@ h3 {
 	font-family: 'Rambla', sans-serif;
 	font-size:20px;
 	list-style-type: none;
-	margin: 0;
-	text-align: left;
 }
