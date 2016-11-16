@@ -8,3 +8,8 @@ section {
 #header {
 	background-color: #BCD2EE;
 }
+h2 {
+	font-style: Verdana;
+	color: #6495ED;
+	font-size: 20px;
+}
