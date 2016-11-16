@@ -5,13 +5,32 @@
 		<title> Contact Me </title>
 	</head>
 	<body>
-        <!-- Personal Information -->
+        <!-- Header -->
 		<section id="header">
 			<p id="name"><h1>Cassandra Frimpong</h1></p>
-                <a href="mailto:cassandrafrimpong@gmail.com"><p id="email">Cassandrafrimpong@gmail.com</p></a>
-                <p>Address: 68 Beulah Hill, SE19 3EW</p>
-                <p>Mobile: 07943126217</p>
+		</section>
+        <!-- Header -->
+        <section>
+        	<h1> Contact Me </h1>
+        	<a href="mailto:cassandrafrimpong@gmail.com"><p id="email">Cassandrafrimpong@gmail.com</p></a>
+            <p>Address: 68 Beulah Hill, SE19 3EW</p>
+            <p>Mobile: 07943126217</p>
 		</section> 
-        <!-- End of Personal Information -->
+		<section>
+            <form method="post" action="http://lacedeamon.spartaglobal.com/contactform">
+            <label for="name">Name: </label>
+            <input type="text" name ="name" id="name">
+
+            <label for="email">Email: </label>
+            <input type="email" name ="email" id="email">
+
+            <input type="hidden" name ="addressee" value="Cassie">
+
+            <label for="message">Message: </label>
+            <input type="text" name ="message" id="message">
+
+            <input type="submit" value="save">
+            </form>
+        </section>
 	</body>
 </html>

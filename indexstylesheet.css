@@ -13,6 +13,7 @@ title {
     overflow: hidden;
     background-color: #F7DCF3;
     font-family: 'Rambla', sans-serif;
+    font-size:18px;
 
 }
 
@@ -49,13 +50,9 @@ h1 {
 #header p{
 	margin:0;
 }
-
-#lifestyle{
-	float: left;
-}
-
-#liststyle li {
-    list-style-type: none;
+p {
+	font-family: 'Rambla', sans-serif;
+	font-size:20px;
 }
 
 h2 {
