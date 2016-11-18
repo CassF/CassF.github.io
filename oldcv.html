@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="indexstylesheet.css">
+		<title>CV</title>
+	</head>
+	<body>
+        <header>
+        <!-- Navigation Bar -->
+        <ul id="navbar">
+            <li><a href="contact.html">Contact Me</a></li>
+            <!-- Adding Images with links for social media - Making links open in new tab-->
+            <li><a target="_blank" href="https://medium.com/@CassF"><img src ="https://maxcdn.icons8.com/Share/icon/Logos//medium_logo1600.png" style="float:right;width:30px;height:30px;border:0;"/>Medium</a></li>
+            <li><a href="about.asp"><img src ="http://aribrenner.com/media/images/linkedin.png" style="float:right;width:30px;height:30px;border:0;"/>Linked in</a></li>
+            <li><a target="_blank" href="https://github.com/CassF"><img src ="http://hammerjs.github.io/assets/img/github-icon.png" style="float:right;width:30px;height:30px;border:0;"/>Github</a></li>
+        </ul>
+        </header>
+        <!-- Personal Information -->
+		<section id="header">
+			<p id="name"><h1>Cassandra Frimpong</h1></p>
+                <a href="mailto:cassandrafrimpong@gmail.com"><p id="email">Cassandrafrimpong@gmail.com</p></a>
+                <p>Address: 68 Beulah Hill, SE19 3EW</p>
+                <p>Mobile: 07943126217</p>
+		</section> 
+        <!-- End of Personal Information -->
+        <!-- Profile -->
+        <section>
+            <h2>Profile</h2>
+            <p> 
+                An enthusiastic individual who is highly motivated with an interest in IT and a pro-active, analytical approach to tasks and challenges. An ambitious and adaptable person with strong communication and problem solving skills, with a desire to learn and grown within the industry. 
+            </p>
+        </section>
+        <!-- End of Profile -->
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div>
+                <h3>University of Bradford, 2013-2016</h3>
+                <strong>BSc Integrated Science, 1st</strong>
+                <h4>Relevant modules</h4>
+                    <ul>
+                        <li>Data Structures and Algorithms</li>
+				        <li>Information Engineering</li>
+				        <li>Database Systems</li> 
+                        <li>Software Development</li>
+				        <li>Information Systems Analysis and Design</li>
+			         </ul>
+            </div>
+            <div>
+            </div>
+            <div>
+                <h3>Christ the King Sixth Form College, 2011-2013</h3>
+                    <!-- List of subjects and grades -->
+                    <ul>
+                        <li>Biology - C</li>
+                        <li>Maths - E</li>
+                        <li>Chemistry - E</li>
+                    </ul>
+                    <!-- End of ist of subjects and grades -->
+            </div>
+            <div>
+                <h3>St Andrews CofE High School, 2006-2011</h3>
+                <strong>11 GCSE's</strong>: (1A*, 1A, 5Bs, and 4Cs) including Mathematics and English.
+            </div>
+        </section>
+        <!-- End of Education -->
+        <!-- Work Experience -->
+        <section>
+            <h2>Employment Experience</h2>
+            <div>
+            <h3>Web Developer</h3>
+            </div>
+        </section>
+        <footer>
+            <form method="post" action="http://lacedeamon.spartaglobal.com/contactform">
+            <label for="name">Name: </label>
+            <input type="text" name ="name" id="name">
+
+            <label for="email">Email: </label>
+            <input type="email" name ="email" id="email">
+
+            <input type="hidden" name ="addressee" value="Cassie">
+
+            <label for="message">Message: </label>
+            <input type="text" name ="message" id="message">
+
+            <input type="submit" value="save">
+            </form>
+        </footer>
+	</body>
+</html>
+
+
+CSS 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans+Condensed:300|Oswald|Roboto+Condensed');
+
+/* Header */
+/* End of Header */
+body {
+    margin:0;
+}
+
+/* Start of Navigation Bar */
+ .navbar {
+    margin: 0;
+    padding: 0;
+  /*  overflow: hidden;*/
+    background-color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-size: 18px;
+
+}
+.navbar li {
+    list-style-type: none;
+    float: left;
+    width: 20%;
+
+} 
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #BE91B8;
+    border-bottom: 4px solid white; 
+}
+/* End of Navigation Bar */
+
+
+.photocircle {
+height: 1px;
+width: 1px;
+background:#BE91B8;
+border: 3px solid #66105A;
+border-radius : 50%;
+color: white;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin-top: 2.2%;
+
+}
+
+h1 {
+    position:absolute;
+    top:200; 
+    left:0; 
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 70px; 
+    text-align: center;
+    color: white; 
+}
+/*.banner img {
+    width:100% !important;
+    height:auto;
+    position: relative;
+}*/
+/* End of Name Banner */
+
+/* Start of Social media Banner */
+/* End of Social Media Banner */
+
+/* Start of Profile 
+.profile {
+    float:left;
+    width: 60%;
+    padding: 2%;
+    margin: 1% 0;
+}
+/* End of Profile */
+
+/* Start of Skills 
+aside {
+    float: right;
+    width: 38%;
+    padding: 2%;
+    margin: 1% 0;
+}
+
+/* End of Skills */
+
+/* Start of Experience */
+/* End of Experience */
+
+/* Start of Skills */
+/* End of Skills */
+
+/* Start of Projects */
+/* End of Projects */
