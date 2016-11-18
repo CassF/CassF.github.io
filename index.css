@@ -1,0 +1,78 @@
+/* Header */
+/* End of Header */
+
+/* Start of Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+/* End of Navigation Bar */
+
+/* Start of Name Banner */
+.photocircle {
+height: 100px;
+width: 100px;
+background:#BE91B8;
+border: 3px solid #66105A;
+border-radius : 50%;
+color: white;
+
+margin-top: 50px;
+position:fixed;
+right:10px;
+top: 1;
+}
+/* End of Name Banner */
+
+/* Start of Social media Banner */
+/* End of Social Media Banner */
+
+/* Start of Profile */
+.profile {
+    float:left;
+    width: 60%;
+    padding: 2%;
+    margin: 1% 0;
+}
+/* End of Profile */
+
+/* Start of Skills */
+aside {
+    float: right;
+    width: 38%;
+    padding: 2%;
+    margin: 1% 0;
+}
+
+/* End of Skills */
+
+/* Start of Experience */
+/* End of Experience */
+
+/* Start of Skills */
+/* End of Skills */
+
+/* Start of Projects */
+/* End of Projects */
