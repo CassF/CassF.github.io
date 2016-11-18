@@ -1,31 +1,38 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans+Condensed:300|Oswald|Roboto+Condensed');
+
 /* Header */
 /* End of Header */
 
 /* Start of Navigation Bar */
-ul {
-    list-style-type: none;
+ .navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    position: fixed;
+    top: 0;
 
-li {
+}
+.navbar li {
+    list-style-type: none;
     float: left;
-}
+    width: 20%;
 
-li a {
+} 
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 5px;
     text-decoration: none;
 }
-
-/* Change the link color on hover */
-
 li a:hover {
-    background-color: #111;
+    background-color: #BE91B8;
+    border-bottom: 4px solid #66105A; 
 }
 
 /* End of Navigation Bar */
@@ -49,7 +56,7 @@ top: 1;
 /* Start of Social media Banner */
 /* End of Social Media Banner */
 
-/* Start of Profile */
+/* Start of Profile 
 .profile {
     float:left;
     width: 60%;
@@ -58,7 +65,7 @@ top: 1;
 }
 /* End of Profile */
 
-/* Start of Skills */
+/* Start of Skills 
 aside {
     float: right;
     width: 38%;

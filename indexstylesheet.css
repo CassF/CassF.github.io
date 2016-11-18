@@ -15,7 +15,17 @@ nav {
     font-family: 'Rambla', sans-serif;
     font-size:18px;
 }
-/*.circle {
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* .circle {
 height: 100px;
 width: 100px;
 background:#BE91B8;
@@ -42,24 +52,7 @@ aside {
 	margin: 1% 0;
 
 }
-nav li {
-    float: left;
-    list-style-type: none;
-}
 
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-}
-/* Change the link color on hover */
-li a:hover {
-    background-color: #BE91B8;
-    border-bottom: 4px solid #66105A;
-}
 /* End of navigation bar*/
 #header{
 	text-align: center;
