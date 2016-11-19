@@ -1,6 +1,5 @@
 /* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans+Condensed:300|Oswald|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed');
 
 /* Header */
 /* End of Header */
@@ -11,9 +10,9 @@ body {
 }
 
 /* Start of Navigation Bar */
- nav {
-  /*  overflow: hidden;*/
-    background-color: #333;
+ nav ul {
+    overflow: hidden;
+    background-color: border-bottom: 5px solid black;
     font-family: 'Roboto Condensed', sans-serif;
     width: 100%;
     position: fixed;
@@ -24,52 +23,70 @@ body {
 nav li {
     list-style-type: none;
     float: left;
-    width: 20%;
-
+    display: block;
+    width: 15%;
+    padding: 0% 0%;
+    text-align: center;
 } 
 nav li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
-    padding: 5px 5px;
+   /* padding: 5px 5px;*/
     text-decoration: none;
+    margin-top: -5%;
+    width: 100%;
 }
 nav li:hover {
-    background-color: #BE91B8;
-    border-bottom: 4px solid white; 
+    background-color: #C9E1FF;
+    border-bottom: 4px solid black;
+    box-shadow: 15% 15% 14% #BDBDBD inset, -15% -15% 14% #BDBDBD inset;
 }
 /* End of Navigation Bar */
 
 
-.photocircle {
+/*.photocircle {
 height: 1px;
 width: 1px;
 background:#BE91B8;
 border: 3px solid #66105A;
 border-radius : 50%;
 color: white;
-}
+}*/
 
 #banner {
-    position: relative;
+    position: fixed;
     width: 100%;
     margin-top: 2.5%;
     overflow: hidden;
 }
+/* Start of Name */
+/* Animation */
+@keyframes name {
+    0%   {color: #FEAFC6; border-bottom: 5px solid #FEAFC6;}
+    25%  {color: #B9FCBA; border-bottom: 5px solid #B9FCBA;}
+    50%  {color: #C9E3FD; border-bottom: 5px solid #C9E3FD;}
+    100% {color: #F8BEEF; border-bottom: 5px solid #F8BEEF;}
 
+}
 h1 {
     position:absolute;
     top:200px; 
     left:0; 
     width: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 100px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 700%; 
     color:white;
     text-align: center;
-    margin-top:0%;
+    margin-top:-10%;
+    animation-name: name;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    border-bottom: 5px solid #FDFDFE;
 }
+/* End of Name */
 #profilepic img {
-    position: absolute;
+    position: relative;
     top: 100px;
     width:100% !important;
     height:auto;
@@ -107,3 +124,19 @@ aside {
 
 /* Start of Projects */
 /* End of Projects */
+
+/* Start of media queries */
+@media only screen and (max-width: 780px) {
+    nav {
+        margin: 2% auto;
+    }
+    nav li a {
+        width: 33.3%;
+        font-size: 90%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-bottom: 1px solid #454545;
+    }
+    nav li:nth-child(3) a {
+        border-right: none;
+    }
