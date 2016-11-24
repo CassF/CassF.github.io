@@ -125,22 +125,94 @@ nav li:hover{
     100% {color: #DBDDDF;}
 }
 
-body {
-    line-height: 1.231;
+
+
+
+
+/* START OF SKILLS */
+/*section div {
+  transition: 0.4s cubic-bezier(1, -1, 0, 2);
+  clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
 }
-.portfolio article header {
-    -mask-image: url(skills-mask.png;
+section div:hover {
+  clip-path: polygon(50% 19%, 0 76%, 100% 76%);
+}
+.skills {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.skills article header {
     -webkit-mask-image: url(skills-mask.png);
-    -o-mask-image: url(skills-circle.png);
-    -moz-mask-image: url(skills-circle.png);
+    -o-mask-image: url(skills-mask.png);
+    -moz-mask-image: url(skills-mask.png);
+    mask-image: url(skills-mask.png;);
     position: relative;
     width: 280px;
     height: 280px;
     z-index: 2;
 }
+.skills article header .details {
+    background: #272123;
+    background: rgba(39,33,35,0.9);
+    padding: 15px 0;
+    position: absolute;
+    top: 290px;
+    left: 0;
+    text-align: center;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    width: 280px;
+    height: 68px;
+}
 #skillsHeader {
     float: left;
     position: relative;
+}
+a {
+    color: #67585e;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+}
+a:-webkit-any-link {
+    cursor: auto;
+}
+.skills {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.skills article img {
+    border-radius: 140px;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+img {
+    border: 0;    
+    vertical-align: middle;
+}
+
+.skills article .clr {
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+.skills article .bw {
+    opacity: 20;
+    z-index: 10;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 }
 .skills article {
     background: #d0d0d0;
@@ -165,7 +237,8 @@ article {
 
 .details {
     display: block;
-}
+}*/
+/* ENND OF SKILLS */
 /*#profilepic img {
     position: relative;
     top: 100px;
