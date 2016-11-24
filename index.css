@@ -1,79 +1,38 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed');
 
-/* Header */
-/* End of Header */
-body {
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Start of Navigation Bar */
- nav ul {
-    overflow: hidden;
-    background-color: border-bottom: 5px solid black;
-    font-family: 'Roboto Condensed', sans-serif;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    font-size: 18px;
+/* Header */
+/* End of Header */
+/* Start of Navbar */
+/*.navbar {
 
-}
-nav li {
-    list-style-type: none;
-    float: left;
-    display: block;
-    width: 15%;
-    padding: 0% 0%;
-    text-align: center;
-} 
-nav li a {
-    display: block;
-    color: black;
-    text-align: center;
-   /* padding: 5px 5px;*/
-    text-decoration: none;
-    margin-top: -5%;
-    width: 100%;
-}
-nav li:hover {
-    background-color: #C9E1FF;
-    border-bottom: 4px solid black;
-    box-shadow: 15% 15% 14% #BDBDBD inset, -15% -15% 14% #BDBDBD inset;
-}
-/* End of Navigation Bar */
-
-
-/*.photocircle {
-height: 1px;
-width: 1px;
-background:#BE91B8;
-border: 3px solid #66105A;
-border-radius : 50%;
-color: white;
 }*/
-
-#banner {
-    position: fixed;
+/* End of Navbar */
+/*Start of Banner */ 
+.banner {
+    position:relative;
     width: 100%;
-    margin-top: 2.5%;
+    height: auto;
     overflow: hidden;
 }
-/* Start of Name */
-/* Animation */
-@keyframes name {
-    0%   {color: #FEAFC6; border-bottom: 5px solid #FEAFC6;}
-    25%  {color: #B9FCBA; border-bottom: 5px solid #B9FCBA;}
-    50%  {color: #C9E3FD; border-bottom: 5px solid #C9E3FD;}
-    100% {color: #F8BEEF; border-bottom: 5px solid #F8BEEF;}
 
-}
-h1 {
-    position:absolute;
-    top:200px; 
-    left:0; 
+.banner img {
     width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.banner h1 {
+    position:relative;
+    /*top:200px; 
+    left:0; */
+    width: 100%; 
     font-family: 'Montserrat', sans-serif;
     font-size: 700%; 
     color:white;
@@ -84,14 +43,29 @@ h1 {
     animation-timing-function: ease-in;
     border-bottom: 5px solid #FDFDFE;
 }
+
+nav {
+    background-color: blue !important;
+}
+/* Start of Name Heading */
+
 /* End of Name */
-#profilepic img {
+/* Animation */
+@keyframes name {
+    0%   {color: #FEAFC6; border-bottom: 5px solid #FEAFC6;}
+    25%  {color: #B9FCBA; border-bottom: 5px solid #B9FCBA;}
+    50%  {color: #C9E3FD; border-bottom: 5px solid #C9E3FD;}
+    100% {color: #F8BEEF; border-bottom: 5px solid #F8BEEF;}
+
+}
+
+/*#profilepic img {
     position: relative;
     top: 100px;
     width:100% !important;
     height:auto;
     position: relative;
-}
+}*/
 /* End of Name Banner */
 
 /* Start of Social media Banner */
