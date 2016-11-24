@@ -113,18 +113,59 @@ nav li:hover{
 /* End of Name */
 /* Animation */
 @keyframes nameh1{
-    0%   {color: #FEAFC6; border-bottom: 5px solid #FEAFC6;}
-    25%  {color: #B9FCBA; border-bottom: 5px solid #B9FCBA;}
-    50%  {color: #C9E3FD; border-bottom: 5px solid #C9E3FD;}
-    100% {color: #F8BEEF; border-bottom: 5px solid #F8BEEF;}
+    0%   {color: #2A2A2A; border-bottom: 5px solid #2A2A2A;}
+    25%  {color: #6C6D6E; border-bottom: 5px solid #6C6D6E;}
+    50%  {color: #C7C8CA; border-bottom: 5px solid #C7C8CA;}
+    100% {color: #DBDDDF; border-bottom: 5px solid #DBDDDF;}
 }
 @keyframes nameh2{
-    0%   {color: #FEAFC6;}
-    25%  {color: #B9FCBA;}
-    50%  {color: #C9E3FD;}
-    100% {color: #F8BEEF;}
+    0%   {color: #2A2A2A;}
+    25%  {color: #6C6D6E;}
+    50%  {color: #C7C8CA;}
+    100% {color: #DBDDDF;}
 }
 
+body {
+    line-height: 1.231;
+}
+.portfolio article header {
+    -mask-image: url(skills-mask.png;
+    -webkit-mask-image: url(skills-mask.png);
+    -o-mask-image: url(skills-circle.png);
+    -moz-mask-image: url(skills-circle.png);
+    position: relative;
+    width: 280px;
+    height: 280px;
+    z-index: 2;
+}
+#skillsHeader {
+    float: left;
+    position: relative;
+}
+.skills article {
+    background: #d0d0d0;
+    border: 1px solid #b9b9b9;
+    border-radius: 150px;
+    float: left;
+    margin: 0 0 30px 30px;
+    overflow: hidden;
+    padding: 9px;
+    position: relative;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    width: 280px;
+    height: 280px;
+}
+
+article {
+    display: block;
+}
+
+.details {
+    display: block;
+}
 /*#profilepic img {
     position: relative;
     top: 100px;
