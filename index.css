@@ -30,33 +30,99 @@
 
 .banner h1 {
     position:relative;
-    /*top:200px; 
-    left:0; */
     width: 100%; 
     font-family: 'Montserrat', sans-serif;
     font-size: 700%; 
     color:white;
     text-align: center;
-    margin-top:-10%;
-    animation-name: name;
+    margin-top:-17%;
+    animation-name: nameh1;
     animation-duration: 5s;
     animation-timing-function: ease-in;
     border-bottom: 5px solid #FDFDFE;
 }
+.banner h2 {
+        font-family: 'Montserrat', sans-serif;
+        color:black;
+        margin-top:-1%;
+        position:relative; 
+        text-align: center;
+        font-size: 250%;
+        color:white;
+        animation-name: nameh2;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+}
 
 nav {
-    background-color: blue !important;
+    background-color:white !important;
+    width: 100%;
+    text-align: center;
 }
+nav ul {
+    list-style: none;
+
+}
+nav li {
+    border-bottom: 3px solid white; 
+    width: 16.65% !important; 
+}
+
+nav li a {
+    color: #BE91B8 ;
+    display: block;
+    float: left;
+	font-size: 120%;
+	font-weight: 600%;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #EEF6FF;
+    /*color: white;*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color:#C4C7CA;
+    transition: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav li:hover{
+    /*color: white;*/
+    font-family: 'Montserrat', sans-serif;
+    background-color:#EEF6FF;
+    /*border-bottom: 3px solid #E8E8E9; 
+    border-top: 3px solid #E8E8E9;*/
+    border-right: 3px solid #C4C7CA;
+    border-left: 3px solid #C4C7CA;
+    width:16.65% !important;
+}
+
+/*nav li:hover {
+    color: white;
+    background-color: #BE91B8;
+    border-bottom: 3px solid #66105A; 
+  }*/
 /* Start of Name Heading */
 
 /* End of Name */
 /* Animation */
-@keyframes name {
+@keyframes nameh1{
     0%   {color: #FEAFC6; border-bottom: 5px solid #FEAFC6;}
     25%  {color: #B9FCBA; border-bottom: 5px solid #B9FCBA;}
     50%  {color: #C9E3FD; border-bottom: 5px solid #C9E3FD;}
     100% {color: #F8BEEF; border-bottom: 5px solid #F8BEEF;}
-
+}
+@keyframes nameh2{
+    0%   {color: #FEAFC6;}
+    25%  {color: #B9FCBA;}
+    50%  {color: #C9E3FD;}
+    100% {color: #F8BEEF;}
 }
 
 /*#profilepic img {
@@ -100,7 +166,7 @@ aside {
 /* End of Projects */
 
 /* Start of media queries */
-@media only screen and (max-width: 780px) {
+/*@media only screen and (max-width: 780px) {
     nav {
         margin: 2% auto;
     }
@@ -113,4 +179,4 @@ aside {
     }
     nav li:nth-child(3) a {
         border-right: none;
-    }
+    }*/
