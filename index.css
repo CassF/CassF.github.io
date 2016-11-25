@@ -7,13 +7,6 @@
     box-sizing: border-box;
 }
 
-/* Header */
-/* End of Header */
-/* Start of Navbar */
-/*.navbar {
-
-}*/
-/* End of Navbar */
 /*Start of Banner */ 
 .banner {
     position:relative;
@@ -31,8 +24,9 @@
 .banner h1 {
     position:relative;
     width: 100%; 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 700%; 
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 800%; 
     color:white;
     text-align: center;
     margin-top:-17%;
@@ -42,18 +36,19 @@
     border-bottom: 5px solid #FDFDFE;
 }
 .banner h2 {
-        font-family: 'Montserrat', sans-serif;
-        color:black;
-        margin-top:-1%;
-        position:relative; 
-        text-align: center;
-        font-size: 250%;
-        color:white;
-        animation-name: nameh2;
-        animation-duration: 5s;
-        animation-timing-function: ease-in;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    margin-top:-1%;
+    position:relative; 
+    text-align: center;
+    font-size: 250%;
+    color:white;
+    animation-name: nameh2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
 }
-
+/* End of banner */ 
+/* Start of navbar */
 nav {
     background-color:white !important;
     width: 100%;
@@ -61,11 +56,13 @@ nav {
 }
 nav ul {
     list-style: none;
+    overflow: hidden;
 
 }
 nav li {
     border-bottom: 3px solid white; 
-    width: 16.65% !important; 
+    width: 16.65% !important;
+    /* Sort out the extra highlight on this */ 
 }
 
 nav li a {
@@ -76,11 +73,11 @@ nav li a {
 	font-weight: 600%;
 	text-align: center;
 	text-decoration: none;
+    /*width: 16.65%;*/ 
 }
 
 nav ul li a:hover {
     background-color: #EEF6FF;
-    /*color: white;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -93,7 +90,6 @@ nav ul li a {
 }
 
 nav li:hover{
-    /*color: white;*/
     font-family: 'Montserrat', sans-serif;
     background-color:#EEF6FF;
     /*border-bottom: 3px solid #E8E8E9; 
@@ -103,11 +99,7 @@ nav li:hover{
     width:16.65% !important;
 }
 
-/*nav li:hover {
-    color: white;
-    background-color: #BE91B8;
-    border-bottom: 3px solid #66105A; 
-  }*/
+/* End of navbar */
 /* Start of Name Heading */
 
 /* End of Name */
@@ -125,12 +117,8 @@ nav li:hover{
     100% {color: #DBDDDF;}
 }
 
-
-
-
-
 /* START OF SKILLS */
-/*section div {
+section div {
   transition: 0.4s cubic-bezier(1, -1, 0, 2);
   clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
 }
@@ -153,7 +141,7 @@ section div:hover {
     z-index: 2;
 }
 .skills article header .details {
-    background: #272123;
+    background: #BE91B8;
     background: rgba(39,33,35,0.9);
     padding: 15px 0;
     position: absolute;
@@ -198,15 +186,29 @@ img {
     vertical-align: middle;
 }
 
-.skills article .clr {
+/*.skills article .clr {
     opacity: 0;
     z-index: 1;
     transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
+}*/
+			
+.skills article .clr-wrap,
+.skills article .clr {
+    background: #272123;
+    border: 1px solid #272123;
+    display: none;
+    opacity: 1;
+    z-index: 1; 
 }
-.skills article .bw {
+
+    .skills article:hover .clr-wrap,
+    .skills article:hover .clr {
+        opacity: 1;				
+    }
+.skills article .bw{
     opacity: 20;
     z-index: 10;
     transition: all 0.2s ease-in;
@@ -237,7 +239,7 @@ article {
 
 .details {
     display: block;
-}*/
+}
 /* ENND OF SKILLS */
 /*#profilepic img {
     position: relative;
