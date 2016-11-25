@@ -1,4 +1,12 @@
+ 
+ /* carousel 
+ $(function(){
+     $(".button-collapse").sideNav();
+    $('.carousel').carousel();
+ }); */
 
+
+/* Skills bar */
 $(function (){
 	$('.skillbar').each(function (){
 		$(this).find('.skillbar-bar').animate({
@@ -6,3 +14,6 @@ $(function (){
 		}, 5000);
 	});
 });
+
+$('.carousel.carousel-slider').carousel({full_width: true});
+
