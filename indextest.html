@@ -27,19 +27,26 @@
         <!-- Start of header -->
         <header>
         <!-- Start of navbar -->
-        <nav>
-            <div class = "nav-wrapper">
-                <ul class = "hide-on-med-and-down" id = "navbar">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                    <li><a href ="#contact">Contact</a></li>
-                </ul>
+            <div class="navbar-fixed">
+                <nav role="navigation">
+                    <div class="nav-wrapper">
+                        <ul class="hide-on-med-and-down">
+                            <li><a class="waves-effect waves-light scrollspy" href="#profile">Profile</a></li>
+                            <li><a class="waves-effect waves-light scrollspy" href="#projects">Projects</a></li>
+                            <li><a class="waves-effect waves-light scrollspy" href="#services">Services</a></li>
+                            <li><a class="waves-effect waves-light scrollspy" href="#contact">Contact</a></li>
+                        </ul>
+                        <!--Mobile Navbar-->
+                        <ul id="nav-mobile" class="side-nav">
+                            <li><a class="scrollspy" href="#profile">Profile</a></li>
+                            <li><a class="scrollspy" href="#projects">Projects</a></li>
+                            <li><a class="scrollspy" href="#services">Services</a></li>
+                            <li><a class="scrollspy" href="#contact">Contacts</a></li>
+                        </ul>
+                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
             </div>
-        </nav>
-        <!-- End of Navbar --> 
         </header>
         <!-- End of header -->
         <!-- Start of Skillbar section -->
@@ -48,6 +55,7 @@
 
             <div class="col s6">
                 <h3 id = "about"> {About} </h3>
+                <img id ="imgstyle" src ="Images/Pastel2.jpg" alt="" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 
             </div>
@@ -98,7 +106,7 @@
             </div>
         </section>
         <br>
-        <hr class="style14">
+        <hr class="style">
         
         <!-- End of Skillbar section -->
 <!-- Start of Projects section -->
@@ -152,7 +160,7 @@
         <section>
             <div class = "row">
             <div class = "col s12">
-                <hr class="style14">
+                <hr class="style">
                                     <h3>Experience</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
@@ -160,7 +168,7 @@
             </div>
   
         </section>
-        <hr class="style14">
+        <hr class="style">
         <!-- Start of Social Media Icon Banner -->
         <!--<section>
             <div>
