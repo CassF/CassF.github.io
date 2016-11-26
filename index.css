@@ -6,7 +6,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
 
+
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+}
 /*Start of Banner */ 
 .banner {
     position:relative;
@@ -67,7 +107,7 @@ nav li {
 }
 
 nav li a {
-    color: #BE91B8 ;
+    color: white ;
     display: block;
     float: left;
 	font-size: 120%;
@@ -78,7 +118,7 @@ nav li a {
 }
 
 nav ul li a:hover {
-    background-color: #EEF6FF;
+    background-color:white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -92,11 +132,13 @@ nav ul li a {
 
 nav li:hover{
     font-family: 'Montserrat', sans-serif;
-    background-color:#EEF6FF;
+    background-color:white;
     /*border-bottom: 3px solid #E8E8E9; 
     border-top: 3px solid #E8E8E9;*/
     border-right: 3px solid #C4C7CA;
     border-left: 3px solid #C4C7CA;
+    /*border-bottom: 3px solid #C4C7CA;
+    border-top: 3px solid #C4C7CA;*/
     width:16.65% !important;
 }
 
@@ -116,58 +158,6 @@ nav li:hover{
     100% {color: #DBDDDF;}
 }
 /* End of Animation */
-
-/* Start of Projects */
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000%;
-    float: left;
-
-}
-/* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
-	width: 350px;
-	height: 350px;
-    margin-top: 0.3%;
-    margin-left: 0.3%;
-    margin-right: 0.3%;
-    /*border-radius: 50%;*/
-
-}
-
-/* Flip speed goes here */
-.flipper {
-	transition: 0.9s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-
-/* Hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-/* Front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
-    background-color: lightblue;
-}
-
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
-    background-color: lightpink;
-}
-/* End of Projects */
 
 /* Start of Skills bar */
 h3 {
@@ -202,7 +192,7 @@ h3 {
 	position:absolute;
 	top:0;
 	left:0;
-    width:25%;
+    width:30%;
 	/*font-weight:bold;*/
 	font-size:100%;
 	color:#ffffff;
@@ -237,7 +227,7 @@ h3 {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
     position: relative;
-    left: 25%;
+    left: 30%;
 }
 
 .skill-bar-percent {
@@ -251,6 +241,59 @@ h3 {
 	color:rgba(0, 0, 0, 0.4);
 }
 /* End of Skills bar */
+
+/* Start of Projects */
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000%;
+    float: left;
+
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 350px;
+	height: 350px;
+    margin-top: 0.3%;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+    border-radius: 50%;
+    margin-bottom: 1%;
+
+}
+
+/* Flip speed goes here */
+.flipper {
+	transition: 0.9s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* Hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    background-color: lightblue;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    background-color: #F9D1F2;
+}
+/* End of Projects */
 
 
 /* Start of media queries */
