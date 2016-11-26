@@ -17,3 +17,4 @@ $(function (){
 
 $('.carousel.carousel-slider').carousel({full_width: true});
 
+$('.carousel-slider').slider({full_width: true});//slider init
