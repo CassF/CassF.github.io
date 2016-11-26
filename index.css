@@ -135,7 +135,7 @@ nav li:hover{
     margin-top: 0.3%;
     margin-left: 0.3%;
     margin-right: 0.3%;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
 
 }
 
@@ -170,7 +170,7 @@ nav li:hover{
 /* End of Projects */
 
 /* Start of Skills bar */
-#skillsbarh1 {
+h3 {
     color:#C4C7CA;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
@@ -182,7 +182,7 @@ nav li:hover{
 	margin-bottom:15px;
 	width:100%;
 	background:#eee;
-	height:35px;
+	height:35%;
 	border-radius:3px;
 	/*-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -202,9 +202,9 @@ nav li:hover{
 	position:absolute;
 	top:0;
 	left:0;
-    width:16%;
-	font-weight:bold;
-	font-size:13px;
+    width:25%;
+	/*font-weight:bold;*/
+	font-size:100%;
 	color:#ffffff;
 	background:#6adcfa;
 	-webkit-border-top-left-radius:3px;
@@ -237,7 +237,7 @@ nav li:hover{
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
     position: relative;
-    left: 16%;
+    left: 25%;
 }
 
 .skill-bar-percent {
