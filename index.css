@@ -144,8 +144,6 @@ nav li:hover{
 	transition: 0.9s;
 	transform-style: preserve-3d;
 	position: relative;
-    
-
 }
 
 /* Hide back of pane during swap */
@@ -186,7 +184,7 @@ nav li:hover{
 	background:#eee;
 	height:35px;
 	border-radius:3px;
-	-moz-border-radius:3px;
+	/*-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	-webkit-transition:0.4s linear;
 	-moz-transition:0.4s linear;
@@ -197,7 +195,7 @@ nav li:hover{
 	-moz-transition-property:width, background-color;
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
+	transition-property:width, background-color;*/
 }
 
 .skillbar-title {
