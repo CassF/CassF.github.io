@@ -95,7 +95,20 @@ hr.style {
 }
 /* End of Animation */
 #imgstyle {
-    border-radius: 50% !important;
+    width: 300px;
+    height: 300px;
+    line-height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    text-align: center;
+}
 }
 /* Start of Skills bar */
 h3 {
