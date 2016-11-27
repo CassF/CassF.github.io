@@ -6,3 +6,7 @@ $(function (){
 		}, 5000);
 	});
 });
+
+$( document ).ready(function(){
+  $(".button-collapse").sideNav();
+});

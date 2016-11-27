@@ -1,12 +1,12 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed');
-/*
-* {
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}*/
-
+}
+/* Start of navbar */
 nav {
     background-color:white !important;
     width: 100%;
@@ -27,7 +27,11 @@ nav ul li a {
 nav ul li a:hover {
     font-weight: bold;
 }
-
+i.material-icons {
+    color: black;
+}
+/* End of navbar */
+/* Start of page breaker */
 hr.style { 
   border: 0; 
   height: 1px; 
@@ -36,8 +40,8 @@ hr.style {
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
-
-/*Start of Banner */ 
+/* End of navbar */
+/*Start of banner */ 
 .banner {
     position:relative;
     width: 100%;
@@ -94,6 +98,7 @@ hr.style {
     100% {color: #DBDDDF;}
 }
 /* End of Animation */
+/* Start of profile section photo */
 #imgstyle {
     width: 300px;
     height: 300px;
@@ -109,7 +114,7 @@ hr.style {
     margin: 0 auto 10px;
     text-align: center;
 }
-}
+/* End of profile section photo */
 /* Start of Skills bar */
 h3 {
     color:#C4C7CA;
