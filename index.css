@@ -66,6 +66,7 @@
     text-transform: uppercase;
     font-size: 150%;
     margin-top: 120%;
+    white-space: nowrap;
 }
 .line {
     border-radius: 2px;
@@ -498,69 +499,40 @@ h4 {
 /* END OF PROJECTS SECTION */
 /* START OF SERVICES */
 /* Start of media queries */
-/*@media only screen and (max-width: 780px) {
-    nav {
-        margin: 2% auto;
-    }
-    nav li a {
-        width: 33.3%;
-        font-size: 90%;
-        padding-top: 2%;
-        padding-bottom: 2%;
-        border-bottom: 1px solid #454545;
-    }
-    nav li:nth-child(3) a {
-        border-right: none;
-    }*/
-/*@media only screen and (max-width: 780px) {
-nav {
+@media only screen and (max-width: 780px) {
+/* NAVBAR */
+/* Move nav bar to top of page */
+.navbar-fixed {
+     width: 100%;
+     position: absolute;
+     top: 0;
+     }
+
+/* Move banner down below top nav bar */
+.banner {
+     position: relative;
+     top: 30px;
+     height: auto;
+     }
+
+.banner h1 {
+
+}
+.banner img {
+    
+}
+
+/*nav {
     margin: 2% auto;
 }
 nav li a {
-	width: 33.3%;
-	font-size: 90%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	border-bottom: 1px solid #454545;
-	}
-nav li:nth-child(3) a {
-		border-right: none;
 
-	}
-section {
-		width: 100%;
-	}
-aside {
-		width:100%;
-	}
-.one-third{
-		width: 100%;
-	}
-h2 {
-		font-size: 105%;
-	}
-p { 
-	font-size: 95% }
+	}*/
 }
+/* BANNER */
 .banner {
     height: 300%; 
 }
 
 @media only screen and (max-width: 580px) {
-nav li a {
-	width: 50%;
-	font-size: 82%;
-	}
-	nav li:nth-child(even) a {
-		border-right: none;
-	}
-	nav li:nth-child(3) a {
-		border-right: 1px solid #454545;
-	}
-	h2 {
-		font-size: 95%;
-	}
-	p { 
-	font-size: 88%; 
-	}
-}*/
+}
