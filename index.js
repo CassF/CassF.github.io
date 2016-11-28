@@ -1,3 +1,9 @@
+/* Side navbar */
+$( document ).ready(function(){
+  $(".button-collapse").sideNav();
+});
+/* End of navbar */ 
+
 /* Skills bar */
 $(function (){
 	$('.skillbar').each(function (){
@@ -6,12 +12,6 @@ $(function (){
 		}, 5000);
 	});
 });
-
-/* Side navbar */
-$( document ).ready(function(){
-  $(".button-collapse").sideNav();
-});
-/* End of navbar */ 
 
 /* Preloader */
 let myVar;

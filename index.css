@@ -502,7 +502,7 @@ h4 {
 
 
 /* Start of media queries */
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 780px) and (max-width: 991px) {
 /* NAVBAR */
 /* Move nav bar to top of page */
 .navbar-fixed {
@@ -510,40 +510,33 @@ h4 {
      position: absolute;
      top: 0;
      }
+/* BANNER */
 /* Move banner down below top nav bar */
 .banner {
      position: relative;
      top: 30px;
      height: auto;
      }
-
 .banner h1 {
     position:relative;
-    width: 100%; 
-    /*font-family: 'Montserrat', sans-serif;*/
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 600%; 
-    color:white;
-    text-align: center;
-
+}
+.banner h2 {
+    position: relative;
+    font-size: 150%;
+ 
 }
 .banner img {
     
+    
+}
 }
 
-/*nav {
-    margin: 2% auto;
-}
-nav li a {
+/* PROFILE */
 
-	}*/
-}
-/* BANNER */
-.banner {
-    height: 300%; 
-}
 
-@media only screen and (max-width: 580px) {
+
+@media only screen and (max-width: 780px) {
 
 .navbar-fixed {
      width: 100%;
@@ -556,5 +549,11 @@ nav li a {
      top: 30px;
      height: auto;
      }
-
+.banner h1 {
+    position:relative;
+    font-size: 500%; 
+}
+.banner h2 {
+    font-size: 156%;
+}
 }
