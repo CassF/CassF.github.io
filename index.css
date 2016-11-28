@@ -300,6 +300,7 @@ hr.style {
     width: 100%;
     height: 300px;
     position: relative;
+    margin-bottom: 0;
 }
 
 .banner h1 {
@@ -498,6 +499,8 @@ h4 {
 }
 /* END OF PROJECTS SECTION */
 /* START OF SERVICES */
+
+
 /* Start of media queries */
 @media only screen and (max-width: 780px) {
 /* NAVBAR */
@@ -507,7 +510,6 @@ h4 {
      position: absolute;
      top: 0;
      }
-
 /* Move banner down below top nav bar */
 .banner {
      position: relative;
@@ -516,6 +518,13 @@ h4 {
      }
 
 .banner h1 {
+    position:relative;
+    width: 100%; 
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 600%; 
+    color:white;
+    text-align: center;
 
 }
 .banner img {
@@ -535,4 +544,17 @@ nav li a {
 }
 
 @media only screen and (max-width: 580px) {
+
+.navbar-fixed {
+     width: 100%;
+     position: absolute;
+     top: 0;
+     }
+
+.banner {
+     position: relative;
+     top: 30px;
+     height: auto;
+     }
+
 }
