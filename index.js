@@ -11,13 +11,15 @@ $( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
 
-var myVar;
+/* Preloader */
+let myVar;
 
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
+  document.getElementById("cont").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+/* End of preloader */ 
