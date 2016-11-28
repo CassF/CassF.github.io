@@ -25,3 +25,5 @@ function showPage() {
   document.getElementById("mainPage").style.display = "block";
 }
 /* End of preloader */ 
+
+/* TIMELINE */
