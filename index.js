@@ -7,9 +7,11 @@ $(function (){
 	});
 });
 
+/* Side navbar */
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
 });
+/* End of navbar */ 
 
 /* Preloader */
 let myVar;
@@ -19,7 +21,7 @@ function myFunction() {
 }
 
 function showPage() {
-  document.getElementById("cont").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("mainPage").style.display = "block";
 }
 /* End of preloader */ 

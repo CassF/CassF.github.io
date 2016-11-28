@@ -16,14 +16,17 @@
     </head>
     <body onload="myFunction()" style="margin:0;">
         <!-- Start of preloader -->
-        <div id ="cont">
+        <div id ="loader">
             <div class="line square"></div>
             <div class="line square2"></div>
             <div class="line square3"></div>
             <div class="line square4"></div>   
+            <div id ="name">
+                <p>Cassandra Frimpong</p>
+            </div>
         </div>
         <!-- End of preloader -->
-        <div id ="myDiv" style = "display:none;">
+        <div id ="mainPage" style = "display:none;" class="animate-bottom">
             <!-- Start of banner -->
             <div class="banner" >
                 <img src ="Images/Pastel2.jpg" alt="" >
@@ -59,14 +62,15 @@
             <!-- Start of Skillbar section -->
             <section>
                 <div class="row">
+                    <h3 id ="profile">Profile</h3>
                 <div class="col s7">
-                    <h3 id = "about">About</h3>
                     <img id ="imgstyle" src ="Images/Pastel2.jpg" alt="" />
+                    <h4>Bio</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <!-- Minus .skillbar-title width from data-percent -->
                     <div class="col s5">
-                        <h3 id = "skills">Skills</h3>
+                        <h4> Skills</h4>
                         <div class="skillbar clearfix " data-percent="20%">
                             <div class="skillbar-title" style="background:#E1A4D7;"><span>HTML5</span></div>
                             <div class="skillbar-bar" style="background:#F9D1F2;"></div>
@@ -111,11 +115,11 @@
                     </div>
                 </div>
             </section>
-            <br>
+            <!-- End of Skillbar section -->
+            <!-- Page break -->
             <hr class="style">
             
-            <!-- End of Skillbar section -->
-    <!-- Start of Projects section -->
+            <!-- Start of Projects section -->
             <section class = "section">
                 <h3 id ="projects">Projects</h3>
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -125,7 +129,6 @@
                         </div>
                         <div class="back">
                         <!-- Back content -->
-                        
                         </div>
                     </div>
                 </div>
@@ -167,9 +170,9 @@
                 <div class = "row">
                 <div class = "col s12">
                     <hr class="style">
-                                        <h3>Experience</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                    <h3>Services</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
                 </div>
                 </div>
     

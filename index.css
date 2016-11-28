@@ -1,21 +1,17 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed');
-*
+/**
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* Test preloader */
-/*html {
-    background: white;
 }*/
-
-#cont {
+/* Start of preloader */
+#loader {
     position: absolute;
     top: 50%;
     margin-top: -50px;
-/* half of #content height*/
+    /* half of #content height*/
     left: 50%;
     margin-left: -50px;
     width: 105px;
@@ -64,13 +60,18 @@
             animation-fill-mode: forwards;
 }
 
+#name {
+    color:#C4C7CA;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 150%;
+    margin-top: 120%;
+}
 .line {
     border-radius: 2px;
     background: #E1A4D7;;
     position: absolute;
 }
-
-
 
 @-webkit-keyframes desno {
     0% {
@@ -108,38 +109,6 @@
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
-    }
-
-    80% {
-        -webkit-transform: rotate(95deg);
-        -ms-transform: rotate(95deg);
-        transform: rotate(95deg);
-        -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
-        transform-origin: bottom left;
-    }
-
-    99.99% {
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: bottom left;
-        -ms-transform-origin: bottom left;
-        transform-origin: bottom left;
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes desno2 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-        opacity: 1;
     }
 
     80% {
@@ -230,37 +199,6 @@
     }
 }
 
-@keyframes desno3 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-
-    80% {
-        -webkit-transform: rotate(95deg);
-        -ms-transform: rotate(95deg);
-        transform: rotate(95deg);
-        -webkit-transform-origin: top right;
-        -ms-transform-origin: top right;
-        transform-origin: top right;
-    }
-
-    99.99% {
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: top right;
-        -ms-transform-origin: top right;
-        transform-origin: top right;
-        opacity: 0;
-    }
-}
 
 @-webkit-keyframes desno4 {
     0% {
@@ -294,71 +232,24 @@
                 animation: desno 0.5s;
     }
 }
-
-@keyframes desno4 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    80% {
-        -webkit-transform: rotate(95deg);
-        -ms-transform: rotate(95deg);
-        transform: rotate(95deg);
-        -webkit-transform-origin: top right;
-        -ms-transform-origin: top right;
-        transform-origin: top right;
-    }
-
-    99.99% {
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-        -webkit-transform-origin: top right;
-        -ms-transform-origin: top right;
-        transform-origin: top right;
-        opacity: 0;
-        -webkit-animation: desno 0.5s;
-                animation: desno 0.5s;
-    }
-}
-/* End of preloader */
-/*Preloader*/
-
-/*div #loader {
-    background-color: blue;
-}
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+/* Animation for main page */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
 }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}*/
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 /* End of preloader */
 /* Start of navbar */
 nav {
@@ -380,6 +271,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     font-weight: bold;
+    color: white;
 }
 i.material-icons {
     color: grey;
@@ -436,23 +328,37 @@ hr.style {
     animation-timing-function: ease-in;
 }
 /* End of banner */ 
-
-
 /* Animation */
-@keyframes nameh1{
+/*@keyframes nameh1{
     0%   {color: #2A2A2A; border-bottom: 5px solid #2A2A2A;}
     25%  {color: #6C6D6E; border-bottom: 5px solid #6C6D6E;}
     50%  {color: #C7C8CA; border-bottom: 5px solid #C7C8CA;}
     100% {color: #DBDDDF; border-bottom: 5px solid #DBDDDF;}
-}
-@keyframes nameh2{
+}*/
+/*@keyframes nameh2{
     0%   {color: #2A2A2A;}
     25%  {color: #6C6D6E;}
     50%  {color: #C7C8CA;}
     100% {color: #DBDDDF;}
-}
+}*/
 /* End of Animation */
+/* START OF HEADING STYLES */
+h3 {
+    color:#C4C7CA;
+    text-align: center;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+}
+h4 {
+    color:#C4C7CA;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 150%;
+    text-align: center;
+}
+/* END OF HEADING STYLES */
 
+/* START OF PROFILE SECTION */
 /* Start of profile section photo */
 #imgstyle {
     width: 45%;
@@ -464,22 +370,11 @@ hr.style {
     margin-right: auto; 
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    /*text-align: center;
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;*/
     margin: 0 auto 10px;
     text-align: center;
 }
 /* End of profile section photo */
-/* Start of Skills bar */
-h3 {
-    color:#C4C7CA;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    /*font-family: 'Montserrat', sans-serif;*/
-}
+/* Start of skills bar */
 .skillbar {
 	position:relative;
 	display:block;
@@ -551,16 +446,16 @@ h3 {
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
-/* End of Skills bar */
+/* End of skills bar */
+/* END OF PROFILE SECTION */
 
-/* Start of Projects */
-/* entire container, keeps perspective */
+/* START OF PROJECTS SECTION */
+/*Entire container, keeps perspective */
 .flip-container {
 	perspective: 1000%;
     float: left;
 }
-
-/* flip the pane when hovered */
+/* Flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
 }
@@ -573,14 +468,12 @@ h3 {
     border-radius: 50%;
     margin-bottom: 1%;
 }
-
 /* Flip speed goes here */
 .flipper {
 	transition: 0.9s;
 	transform-style: preserve-3d;
 	position: relative;
 }
-
 /* Hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
@@ -602,9 +495,8 @@ h3 {
 	transform: rotateY(180deg);
     background-color: #F9D1F2;
 }
-/* End of Projects */
-
-
+/* END OF PROJECTS SECTION */
+/* START OF SERVICES */
 /* Start of media queries */
 /*@media only screen and (max-width: 780px) {
     nav {
