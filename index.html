@@ -1,188 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <link rel="stylesheet" type="text/css" href="indexstylesheet.css">
+    <head>
         <!--Import Google Icon Font-->
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <!-- Import my custom index stylesheet -->
+        <link rel="stylesheet" type="text/css" href="indexstylesheet.css">
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
-	<body>
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
-        <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
-        <script src="index.js"></script>
-        <!--Header -->
-              <div class="card-panel teal lighten-2"><h3>Hello World!</h3></div>
-        <header>
-        <!-- Start of Navigation Bar -->
-        <nav>
-            <div class = "nav-wrapper">
-                <ul class = "left hide-on-med-and-down">
-                    <li><a href ="">Social</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+        <script src="js/index.js"></script>
+    </head>
+    <body onload="myFunction()" style="margin:0;">
+        <!-- Start of preloader -->
+
+<section id="newloader">
+<div id="loader-wrapper">
+	<div class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+  
+  <div id="loader2" class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+  
+  <div id="loader3" class="loader">
+    <div class="roller"></div>
+    <div class="roller"></div>
+  </div>
+
+  
+            <div id ="name">
+                <p>Cassandra Frimpong</p>
             </div>
-        </nav>
-        </header> 
-        <!-- End of Header -->
-        <!-- End of Navigation Bar -->
-        <!-- Start of Name Banner -->
-        <div class="animation">
-            <img id="banner" src ="Images/Pastel2.jpg" alt="" style="width:100%;height:50%;border:0;"/>
-            <h1>Cassandra <br>Frimpong</br></h1>
-            <h2>Web Devloper</h2> 
-            <!-- <img id ="profilepic" src="Me.jpg"> -->
         </div>
-
-
-        <!-- End of Name Banner -->
- <section class="section white" id="experience" role="experience-section">
-                <div class="lightBlue">
-                    <div class="row container">
-                        <section id="canDo" role="canDO">
-                            <section id="cd-timeline">
-                                <div class="cd-timeline-block">
-                                    <h3>Experience</h3>
-                                    <div class="cd-timeline-img center-align">
-                                         <i class="medium material-icons">code</i>
-                                    </div> <!-- cd-timeline-img -->
-                                    
-                                    <div class="cd-timeline-content">
-                                        <h6>Sparta Global Consultant: November 2016 - current</h6>
-                                        <p>I am currently working as a consultant at Sparta Global. I have started training, and hope to learn lots of new things about development and coding. </p>
-                                        <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                                        <span class="cd-date">
-                                            <p>
-                                                <strong>SKILLS USED:</strong> HTML . CSS . XML . GIT . JavaScript
-                                            </p>
-                                    </div> <!-- cd-timeline-content -->
-                                </div> <!-- cd-timeline-block -->
-                            
-                                <div class="cd-timeline-block">
-                                    <div class="cd-timeline-img">
-                                        <i class="medium material-icons">business</i>
-                                    </div> <!-- cd-timeline-img -->
-                            
-                                    <div class="cd-timeline-content">
-                                        <h6>Saffron Care Homes Freelancer: May 2013 - September 2016</h6>
-                                        <p>Created brochures displaying the company's care homes, this was made using Photoshop and Indesign. I’ve carried out user testing and redesigned and built there company website where I had to access the back-end of the website to edited their code to fulfil the customer's needs.</p>
-                                        <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                                        <span class="cd-date">
-                                            <p>
-                                                <strong>SKILLS USED:</strong> InDesign . Photoshop . UX Skills . Wireframing . HTML . CSS
-                                            </p>
-                                    </div>
-                                </div>
-
-                                <div class="cd-timeline-block">
-                                    <div class="cd-timeline-img">
-                                        <i class="medium material-icons">business</i>
-                                    </div> <!-- cd-timeline-img -->
-                            
-                                    <div class="cd-timeline-content">
-                                        <h6>AMO CARE Freelancer: June 2012 - August 2016</h6>
-                                        <p>Created brochures displaying the company's care homes, this was made using Photoshop and Indesign. I’ve carried out user testing and redesigned and built there company website where I had to access the back-end of the website to edited their code to fulfil the customer's needs.</p>
-                                        <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                                        <span class="cd-date">
-                                            <p>
-                                                <strong>SKILLS USED:</strong> Branding . Photoshop . Illustrator . WordPress . HTML . CSS . UX Skills . Wireframing
-                                            </p>
-                                    </div>
-                                </div>
-                                <a href="cv2-edit(1).pdf">Download CV</a>
-                            </section>
-                        </section>
-                    </div>
+</section>
+        <!-- End of preloader -->
+        <div id ="mainPage" style = "display:none;" class="animate-bottom">
+            <!-- Start of banner -->
+            <div class="banner" >
+                <img src ="Images/Pastel2.jpg" alt="" >
+                <h1>Cassandra Frimpong</h1>
+                <h2>WEB DEVELOPER</h2>
+            </div>
+            <!-- End of Banner -->
+            <!-- Start of header -->
+            <header>
+            <!-- Start of navbar -->
+                <div class="navbar-fixed">
+                    <nav role="navigation">
+                        <div class="nav-wrapper">
+                            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul class="hide-on-med-and-down">
+                                <li><a class="waves-effect waves-light scrollspy" href="#profile">Profile</a></li>
+                                <li><a class="waves-effect waves-light scrollspy" href="#projects">Projects</a></li>
+                                <li><a class="waves-effect waves-light scrollspy" href="#experience">Experience</a></li>
+                                <li><a class="waves-effect waves-light scrollspy" href="#contact">Contact</a></li>
+                            </ul>
+                            <!--Mobile Navbar-->
+                            <ul id="nav-mobile" class="side-nav">
+                                <li><a class="scrollspy" href="#profile">Profile</a></li>
+                                <li><a class="scrollspy" href="#projects">Projects</a></li>
+                                <li><a class="scrollspy" href="#experience">Experience</a></li>
+                                <li><a class="scrollspy" href="#contact">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-            </section>
-
-
-        <!-- Start of Social media Banner 
-        <section id = "social">
-            <div>
-                <a target="_blank" href="https://medium.com/@CassF"><img src ="https://maxcdn.icons8.com/Share/icon/Logos//medium_logo1600.png" style="float:right;width:30px;height:30px;border:0;"/></a>
-            </div>
-            <div>
-                <a href="about.asp"><img src ="http://aribrenner.com/media/images/linkedin.png" style="float:right;width:30px;height:30px;border:0;"/></a><
-            </div>
-            <div>
-                <a target="_blank" href="https://github.com/CassF"><img src ="http://hammerjs.github.io/assets/img/github-icon.png" style="float:right;width:30px;height:30px;border:0;"/></a>
-            </div>
-            <div></div>
-        </section>
-        <!-- End of Social Media Banner 
-    
-        <section>
-            <div id = "profile">
-                <h2>Profile</h2>
-                <p> enthusiastic individual who is highly motivated with an interest in IT and a pro-active, analytical approach to tasks and challenges. An ambitious and adaptable person with strong communication and problem solving skills, with a desire to learn and grown within the industry. </p>
-            </div>
-        </section>
-        End of Profile 
-         Start of Skills
-        <section id = "skills">
-        <aside>
-            <h2>Skills</h2>
-            <div class="circle"><p>JavaScript</p></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </aside>
-        </section>
-     End of Skills 
-     Start of Experience 
-        <section id = "experience">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </section>
-         End of Experience 
-         Start of Skills 
-        <section>
-            <div>
-                
-            </div>
-        </section>
-        End of Skills 
-        Start of Projects
-        <section>
-            <div>
-                
-            </div>
-        </section>
-         End of Projects 
-        <footer>
-            <form method="post" action="http://lacedeamon.spartaglobal.com/contactform">
-            <label for="name">Name: </label>
-            <input type="text" name ="name" id="name">
-
-            <label for="email">Email: </label>
-            <input type="email" name ="email" id="email">
-
-            <input type="hidden" name ="addressee" value="Cassie">
-
-            <label for="message">Message: </label>
-            <input type="text" name ="message" id="message">
-
-            <input type="submit" value="save">
-            </form>
-        </footer>
-	</body>
-</html> -->
+            </header>
+        
+        </body>
+</html>
