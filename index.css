@@ -379,8 +379,8 @@ h4 {
     text-align: center;
 }
 /* End of profile section photo */
-/* Start of skills bar */
-.skillbar {
+/* Start of  OLD skills bar */
+/*.skillbar {
 	position:relative;
 	display:block;
 	margin-bottom:36px;
@@ -403,6 +403,7 @@ h4 {
 }
 
 .skillbar-title {
+        transform: uppercase;
 	position:absolute;
     width:30%;
 	font-size:100%;
@@ -450,8 +451,80 @@ h4 {
 	line-height:20px;
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
-}
+}*/
 /* End of skills bar */
+/*New Skills bar */
+.container {
+	max-width: 600px;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+.content{
+	width:100%;
+  margin: 0px auto;
+	position:relative;
+	float:left;
+	padding:30px 0 30px;
+}
+.col { width:100%; margin: 0px auto;}
+
+#skill { 
+	list-style:none; 
+	padding-top:30px;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	background:lightgrey; 
+	height:15px; 
+	border-radius:10px; 
+	border:2px solid lightgrey;
+}
+
+#skill li em { 
+	position:relative; 
+	top:-30px;
+  font-style: normal;
+  font: 16px 'Roboto Slab', sans-serif;
+  font-weight:300;
+
+}
+
+.expand { 
+	height:10px; 
+	margin:2px; 
+  border-radius:10px;
+	background:linear-gradient(to right, #E1A4D7 0%,#e46885 100%); 
+	position:absolute;
+	box-shadow:0px 0px 3px 1px rgba(234,224,172,0.6);
+}
+
+.html      { width:80%;  -moz-animation:html 2s ease-out;      -webkit-animation:html 2s ease-out;      }
+.js   { width:90%;  -moz-animation:js 2s ease-out;   -webkit-animation:js 2s ease-out;   }
+.nr       { width:70%;  -moz-animation:nr 2s ease-out;       -webkit-animation:nr 2s ease-out;       }
+.wd     { width:60%;  -moz-animation:wd 2s ease-out;       -webkit-animation:wd 2s ease-out;       }
+.vc       { width:70%;  -moz-animation:vc 2s ease-out;       -webkit-animation:vc 2s ease-out;       }
+.pa        { width:60%;  -moz-animation:pa 2s ease-out;        -webkit-animation:pa 2s ease-out;        }
+.pt        { width:60%;  -moz-animation:pt 2s ease-out;        -webkit-animation:pt 2s ease-out;        }
+
+
+@-moz-keyframes html          { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes js        { 0%  { width:0px;} 100%{ width:90%;}  }
+@-moz-keyframes nr          { 0%  { width:0px;} 100%{ width:70%;} }
+@-moz-keyframes wd         { 0%  { width:0px;} 100%{ width:60%;} }
+@-moz-keyframes vc        { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes pa         { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes pt         { 0%  { width:0px;} 100%{ width:60%;}  }
+
+
+@-webkit-keyframes html         { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes js       { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes nr         { 0%  { width:0px;} 100%{ width:70%;} }
+@-webkit-keyframes wd        { 0%  { width:0px;} 100%{ width:60%;} }
+@-webkit-keyframes vc       { 0%  { width:0px;} 100%{ width:70%;} }
+@-webkit-keyframes pa        { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes pt        { 0%  { width:0px;} 100%{ width:60%;}  }
 /* END OF PROFILE SECTION */
 
 /* START OF PROJECTS SECTION */
@@ -503,84 +576,6 @@ h4 {
 /* END OF PROJECTS SECTION */
 
 /* START OF EXPERIENCE */
-.container {
-   width: 80%;
-   padding: 50px 0;
-   margin: 50px auto;
-   position: relative;
-   overflow: hidden;
-}
-
-.container:before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 50%;
-   margin-left: -1px;
-   width: 2px;
-   height: 100%;
-   background: #CCD1D9;
-   z-index: 1
-}
-
-.timeline-block {
-   width: -webkit-calc(50% + 8px);
-   width: -moz-calc(50% + 8px);
-   width: calc(50% + 8px);
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -moz-box;
-   display: flex;
-   -webkit-box-pack: justify;
-   -webkit-justify-content: space-between;
-   -moz-box-pack: justify;
-   justify-content: space-between;
-   clear: both;
-}
-
-.timeline-block-right {
-   float: right;
-}
-
-.timeline-block-left {
-   float: left;
-   direction: rtl
-}
-
-.marker {
-   width: 16px;
-   height: 16px;
-   border-radius: 50%;
-   border: 2px solid #F5F7FA;
-   /*background: #4FC1E9;*/
-   margin-top: 10px;
-   z-index: 9999
-}
-
-.timeline-content {
-   width: 95%;
-   padding: 0 15px;
-   color: #666
-}
-
-.timeline-content h3 {
-   margin-top: 5px;
-   margin-bottom: 5px;
-   font-size: 25px;
-   font-weight: 500
-}
-
-.timeline-content span {
-   font-size: 15px;
-   color: #a4a4a4;
-}
-
-.timeline-content p {
-   font-size: 14px;
-   line-height: 1.5em;
-   word-spacing: 1px;
-   color: #888;
-}
 
 
 @media screen and (max-width: 768px) {
