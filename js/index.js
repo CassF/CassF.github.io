@@ -14,16 +14,16 @@ $(function (){
 });
 
 /* Preloader */
-let myVar;
+// let myVar;
 
-function myFunction() {
-    myVar = setTimeout(showPage, 3000);
-}
+// function myFunction() {
+//     myVar = setTimeout(showPage, 3000);
+// }
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("mainPage").style.display = "block";
-}
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("mainPage").style.display = "block";
+// }
 /* End of preloader */ 
 
 /* TIMELINE */
