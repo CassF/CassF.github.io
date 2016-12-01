@@ -242,7 +242,7 @@
                 animation: desno 0.5s;
     }
 }
-/* Animation for main page */
+/* Animation for main page to load gradually*/
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -261,6 +261,7 @@
   to{ bottom:0; opacity:1 }
 }
 /* End of preloader */
+
 /* Start of navbar */
 nav {
     background-color:white !important;
@@ -385,6 +386,7 @@ h4 {
     margin: 0 auto 10px;
     text-align: center;
 }
+
 /* End of profile section photo */
 /* Start of  OLD skills bar */
 /*.skillbar {
