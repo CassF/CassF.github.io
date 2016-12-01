@@ -183,7 +183,8 @@ img {border: none;}*/
 	top:-30px;
 	font-style: normal;
 	font: 16px 'Roboto Slab', sans-serif;
-	font-weight:300;
+
+      font-size: 120%;
 
 }
 

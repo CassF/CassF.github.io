@@ -1,11 +1,21 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Lustria|Montserrat|Quicksand|Roboto+Condensed|Arvo|Gabriela|PT+Serif+Caption|Raleway|Vollkorn');
 /**
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }*/
+/* Main components */
+p {
+    /*font-family: 'Arvo', serif;*/
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-size: 120%;
+}
+.section {
+    padding-bottom: 10rem;
+}
 /* Start of preloader */
 #loader {
     position: absolute;
@@ -242,6 +252,7 @@
                 animation: desno 0.5s;
     }
 }
+/* End of loader */
 /* Animation for main page to load gradually*/
 .animate-bottom {
   position: relative;
@@ -260,7 +271,7 @@
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
-/* End of preloader */
+/* End of main page animation */
 
 /* Start of navbar */
 nav {
@@ -338,7 +349,12 @@ hr[role="tournament2"]::before {
     position:relative;
     width: 100%; 
     /*font-family: 'Montserrat', sans-serif;*/
-    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Arvo', serif;
+    /*font-family: 'Vollkorn', serif;*/
+    /*font-family: 'Gabriela', serif;*/
+    /*font-family: 'PT Serif Caption', serif;*/
     font-size: 800%; 
     color:white;
     text-align: center;
@@ -346,15 +362,17 @@ hr[role="tournament2"]::before {
     animation-name: nameh1;
     animation-duration: 5s;
     animation-timing-function: ease-in;
-    border-bottom: 5px solid #FDFDFE;
+    border-bottom: 5px solid white;
 }
 .banner h2 {
     font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Serif Caption', serif;
+    font-family: 'Arvo', serif;
     color:black;
     margin-top:-1%;
     position:relative; 
     text-align: center;
-    font-size: 250%;
+    font-size: 270%;
     color:white;
     animation-name: nameh2;
     animation-duration: 5s;
@@ -380,7 +398,10 @@ h3 {
     color:#C4C7CA;
     text-align: center;
     /*font-family: 'Roboto Condensed', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Arvo', serif;
+    padding-bottom: 4%;
+
 }
 h4 {
     color:#C4C7CA;
@@ -392,6 +413,9 @@ h4 {
 /* END OF HEADING STYLES */
 
 /* START OF PROFILE SECTION */
+#profile {
+    padding-bottom: 1%;
+}
 /* Start of profile section photo */
 #imgstyle {
     width: 45%;
@@ -406,8 +430,30 @@ h4 {
     margin: 0 auto 10px;
     text-align: center;
 }
-
 /* End of profile section photo */
+/* Start of icons styling */
+.fa-github-square {
+    color: #C4C7CA;
+    margin-left: 1%;
+}
+.fa-twitter-square {
+    color: #C4C7CA;
+}
+.fa-linkedin-square {
+    color: #C4C7CA;
+}
+.fa-instagram {
+    color: #C4C7CA;
+}
+.fa-medium {
+    color: #C4C7CA;
+}
+.icons {
+    padding-top: 9%;
+    text-align: center;
+}
+/* End of icons styling */
+/* END OF PROFILE SECTION */
 /* Start of  OLD skills bar */
 /*.skillbar {
 	position:relative;
@@ -505,18 +551,21 @@ h4 {
 
 #skill li { 
 	margin-bottom:50px; 
-	background:lightgrey; 
+	background:#C4C7CA; 
 	height:15px; 
 	border-radius:10px; 
-	border:2px solid lightgrey;
+	border:2px solid #C4C7CA;
 }
 
 #skill li em { 
 	position:relative; 
 	top:-30px;
     font-style: normal;
-    font: 16px 'Roboto Slab', sans-serif;
+    /*font: 16px 'Roboto Slab', sans-serif;*/
+    /*font-family: 'Arvo', serif;*/
+    font-family: "Roboto", sans-serif;
     font-weight:300;
+    color: black;
 
 }
 
@@ -573,7 +622,7 @@ h4 {
     margin-top: 0.3%;
     margin-left: 0.3%;
     margin-right: 0.3%;
-    border-radius: 10%;
+    border-radius: 50%;
     margin-bottom: 1%;
 }
 /* Flip speed goes here */
@@ -605,14 +654,21 @@ h4 {
 }
 /* END OF PROJECTS SECTION */
 
-
+/* START OF EXPERIENCE */
+.experience {
+    text-align: left;
+}
+.exhr {
+    background-color: blue;
+}
 
 
 /* Footer */
-.page-footer {
-    background-image: url(Images/FooterPastel.jpeg);
-    width: 100%;
-    background-size: 100% 100%;
+footer.page-footer {
+    /*background-image: url(Images/FooterPastel.jpeg);*/
+    background-color: #C4C7CA;
+    /*width: 100%;
+    background-size: 100% 100%;*/
 }
 
 
