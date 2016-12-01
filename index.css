@@ -553,7 +553,7 @@ h4 {
     margin-top: 0.3%;
     margin-left: 0.3%;
     margin-right: 0.3%;
-    border-radius: 50%;
+    border-radius: 10%;
     margin-bottom: 1%;
 }
 /* Flip speed goes here */
@@ -585,8 +585,6 @@ h4 {
 }
 /* END OF PROJECTS SECTION */
 
-/* START OF EXPERIENCE */
-
 
 
 
@@ -616,7 +614,8 @@ h4 {
       direction: ltr;
    }
 }
-/* END OF EXPERIENCE */
+
+
 
 /* Start of media queries */
 @media only screen and (min-width: 780px) and (max-width: 991px) {
