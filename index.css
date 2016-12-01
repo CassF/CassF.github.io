@@ -298,6 +298,26 @@ hr.style {
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
 }
+hr[role="tournament2"] {
+    border: 0px solid;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(223, 176, 245, 1), rgba(0, 0, 0, 0));
+    margin: 32px 0px;
+    display: block;
+}
+hr[role="tournament2"]::before {
+    position: absolute;
+    background-color: #efefef;
+    border: 1px solid;
+    border-color: #DFB0F5;
+    border-left: 0px solid;
+    border-top: 0px solid;
+    padding: 10px;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -10px 0px 0px -22px;
+    content: "";
+}
 /* End of page breaker*/
 /*Start of banner */ 
 .banner {
