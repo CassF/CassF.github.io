@@ -69,14 +69,14 @@
                     <img id ="imgstyle" src ="Images/Pastel2.jpg" alt="" />
                     <h4>Bio</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="icons">
+                    <!--<div class="icons">
                         <h4> Social profiles</h4>
                         <i class ="fa fa-github-square fa-5x"></i>
                         <i class="fa fa-instagram fa-5x"></i>
                         <i class="fa fa-twitter-square fa-5x"></i>
                         <i class="fa fa-linkedin-square fa-5x"></i>
                         <i class="fa fa-medium fa-5x"></i>
-                    </div>
+                    </div>-->
                 </div>
                     <div class="col s6">
                         <h4> Skillset</h4>
@@ -219,8 +219,8 @@
                 </div>
                 <div class ="row container">
                     <div class="animatedParent">
-                            <a target="_blank" href="documents/cv1.pdf" class="waves-effect waves-light btn-large animated bounceInUp">
-                                <i class ="fa fa-cloud-download">
+                            <a target="_blank" href="documents/cv1.pdf" class=" btn animated bounceInUp " onclick="Materialize.toast('CV Downloaded', 4000)">
+                            <i class ="fa fa-cloud-download">
                                 </i>
                                 Download CV
                             </a>
@@ -234,31 +234,21 @@
 
             <!-- Start of Footer -->
             <footer class="page-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <h5 class="white-text">Footer Content</h5>
-                            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <div class="row">
+                        <div class="col s6 copyright">
+                        © 2016 CASSANDRA FRIMPONG.
                         </div>
-                        <div class="col l4 offset-l2 s12">
-                            <h5 class="white-text">Links</h5>
-                            <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                            </ul>
+                        <div class="col s6">
+                            <div class="icons">
+                                <a href =""><i class ="fa fa-github-square fa-4x"></i></a>
+                                <a href =""><i class="fa fa-instagram fa-4x"></i></a>
+                                <a href =""><i class="fa fa-twitter-square fa-4x"></i></a>
+                                <a href =""><i class="fa fa-linkedin-square fa-4x"></i></a>
+                                <a href =""><i class="fa fa-medium fa-4x"></i></a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        © 2016 Cassandra Frimpong, All Rights Reserved
-                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                    </div>
                 </div>
             </footer>
-
             <!--Import jQuery before materialize.js-->
             <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
             <script type="text/javascript" src="js/materialize.min.js"></script>
