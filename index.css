@@ -12,6 +12,7 @@ p {
     font-family: "Roboto", sans-serif;
     color: black;
     font-size: 120%;
+    text-align: justify;
 }
 .section {
     padding-bottom: 10rem;
@@ -396,7 +397,8 @@ hr[role="tournament2"]::before {
 /* START OF HEADING STYLES */
 h3 {
     color:#C4C7CA;
-    text-align: center;
+    text-align: left;
+    font-size: 3.4rem;
     /*font-family: 'Roboto Condensed', sans-serif;*/
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Arvo', serif;
@@ -656,17 +658,32 @@ h4 {
 
 /* START OF EXPERIENCE */
 .experience {
-    text-align: left;
+    text-align: center;
 }
 .exhr {
     background-color: blue;
 }
+/* Button */
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F9D1F2;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+    margin-left: 35%;
+}
 
+.btn:hover, .btn-large:hover {
+  background-color: #EBDDE2;
+}
+/* END OF EXPERIENCE */
 
 /* Footer */
 footer.page-footer {
     /*background-image: url(Images/FooterPastel.jpeg);*/
-    background-color: #C4C7CA;
+    background-color: #E2E2E2;
     /*width: 100%;
     background-size: 100% 100%;*/
 }
