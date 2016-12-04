@@ -219,9 +219,8 @@
                 <div class ="row container">
                     <div class="animatedParent">
                         <a target="_blank" href="documents/cv1.pdf" class=" btn animated bounceInUp " onclick="Materialize.toast('CV Downloaded', 4000)">
-                        <i class ="fa fa-cloud-download">
-                        </i>
-                        Download CV
+                            <i class ="fa fa-cloud-download"></i>
+                            Download CV
                         </a>
                     </div>
                 </div>
@@ -255,6 +254,15 @@
                             <div class="input-field col s12">
                             <input id="email" type="email" class="validate">
                             <label for="email">Your Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class = "animatedParent">
+                                <!--<p class="right-align"><button class="btn animated bounceInUp" type="button" name="action">Send Message</button></p>-->
+                                <a class = "btn animated bounceInUp" onclick="Materialize.toast('Thank you! Your message has sent.', 3000)">
+                                    <i class = "fa fa-envelope-o"></i>
+                                    Send Message
+                                </a>
                             </div>
                         </div>
                         </form>
